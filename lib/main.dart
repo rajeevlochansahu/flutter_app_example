@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
             //mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -23,14 +23,14 @@ class MyApp extends StatelessWidget {
                 color: Colors.orange,
                 child: Text('Container 1'),
               ),
-              SizedBox(height: 20),
+              SizedBox(width: 20),
               Container(
                 height: 100.0,
                 width: 100.0,
                 color: Colors.white,
                 child: Text('Container 2'),
               ),
-              SizedBox(height: 20),
+              SizedBox(width: 20),
               Container(
                 height: 100.0,
                 width: 100.0,
