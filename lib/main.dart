@@ -20,24 +20,20 @@ class MyApp extends StatelessWidget {
               Container(
                 height: 100.0,
                 width: 100.0,
-                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                padding: EdgeInsets.all(20),
                 color: Colors.orange,
                 child: Text('Container 1'),
               ),
+              SizedBox(height: 20),
               Container(
                 height: 100.0,
                 width: 100.0,
-                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                padding: EdgeInsets.all(20),
                 color: Colors.white,
                 child: Text('Container 2'),
               ),
+              SizedBox(height: 20),
               Container(
                 height: 100.0,
                 width: 100.0,
-                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                padding: EdgeInsets.all(20),
                 color: Colors.green,
                 child: Text('Container 3'),
               )
