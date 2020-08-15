@@ -13,18 +13,21 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: Scaffold(
         backgroundColor: Colors.teal,
+        appBar: AppBar(title: Text('IntrinsicWidth example')),
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.baseline,
-            textBaseline: TextBaseline.alphabetic,
+          child: Column(
             children: <Widget>[
-              Text(
-                'line',
-                style: Theme.of(context).textTheme.headline2,
+              RaisedButton(
+                onPressed: () {},
+                child: Text('Short'),
               ),
-              Text(
-                'Baseline',
-                style: Theme.of(context).textTheme.bodyText2,
+              RaisedButton(
+                onPressed: () {},
+                child: Text('A bit Longer'),
+              ),
+              RaisedButton(
+                onPressed: () {},
+                child: Text('The Longest text button'),
               ),
             ],
           ),
