@@ -15,21 +15,24 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         appBar: AppBar(title: Text('IntrinsicWidth example')),
         body: SafeArea(
-          child: Column(
-            children: <Widget>[
-              RaisedButton(
-                onPressed: () {},
-                child: Text('Short'),
-              ),
-              RaisedButton(
-                onPressed: () {},
-                child: Text('A bit Longer'),
-              ),
-              RaisedButton(
-                onPressed: () {},
-                child: Text('The Longest text button'),
-              ),
-            ],
+          child: IntrinsicWidth(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                RaisedButton(
+                  onPressed: () {},
+                  child: Text('Short'),
+                ),
+                RaisedButton(
+                  onPressed: () {},
+                  child: Text('A bit Longer'),
+                ),
+                RaisedButton(
+                  onPressed: () {},
+                  child: Text('The Longest text button'),
+                ),
+              ],
+            ),
           ),
         ),
       ),
