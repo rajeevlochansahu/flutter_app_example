@@ -6,6 +6,7 @@ void main() {
 }
 
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+//custom fonts download - https://fonts.google.com/?query=source+sans+pro
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -39,6 +40,11 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal.shade100,
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold),
+              ),
+              Container(
+                child: Row(
+                  children: [],
+                ),
               )
             ],
           ),
