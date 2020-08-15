@@ -14,29 +14,17 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
-            //mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.orange,
-                child: Text('Container 1'),
+            crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
+            children: <Widget>[
+              Text(
+                'line',
+                style: Theme.of(context).textTheme.headline2,
               ),
-              SizedBox(width: 20),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.white,
-                child: Text('Container 2'),
+              Text(
+                'Baseline',
+                style: Theme.of(context).textTheme.bodyText2,
               ),
-              SizedBox(width: 20),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.green,
-                child: Text('Container 3'),
-              )
             ],
           ),
         ),
