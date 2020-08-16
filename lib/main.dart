@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: Scaffold(
         backgroundColor: Colors.teal,
-        appBar: AppBar(title: Text('IntrinsicWidth example')),
+        appBar: AppBar(title: Text('Flutter Demo')),
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -42,8 +42,45 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               Container(
+                padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: Row(
-                  children: [],
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(width: 10.0),
+                    Text(
+                      '+44 123 456 7890',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          color: Colors.teal.shade900,
+                          fontSize: 20.0),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(width: 10.0),
+                    Text(
+                      'rajeev@gmail.com',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          color: Colors.teal.shade900,
+                          fontSize: 20.0),
+                    )
+                  ],
                 ),
               )
             ],
